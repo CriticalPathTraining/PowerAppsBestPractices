@@ -1,0 +1,48 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "CustomerFactoryApi",
+    "description": "Sample custom connector providing sample customer data",
+    "version": "1.0"
+  },
+  "host": "cptlabs.azurewebsites.net",
+  "basePath": "/api/",
+  "schemes": [ "https" ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/NextCustomer": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": { "firstName": { "type": "string", "description": "firstName" },
+                "lastName": { "type": "string", "description": "lastName" },
+                "company": { "type": "string", "description": "company" },
+                "emailAddress": { "type": "string", "description": "emailAddress" },
+                "workPhone": { "type": "string", "description": "workPhone" },
+                "homePhone": { "type": "string", "description": "homePhone" },
+                "address": { "type": "string", "description": "address" },
+                "city": { "type": "string", "description": "city" },
+                "state": { "type": "string", "description": "state" },
+                "zipcode": { "type": "string", "description": "zipcode" }
+              }
+            }
+          }
+        },
+        "summary": "Get Next Customer",
+        "description": "Operation to get customer data from random set of customers",
+        "operationId": "NextCustomer",
+        "parameters": []
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {},
+  "security": [],
+  "tags": []
+}
